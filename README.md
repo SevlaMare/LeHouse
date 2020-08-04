@@ -1,7 +1,7 @@
 # Le House
 > A restaurant page.
 
-<!-- ![screenshot](screenshot.png) -->
+<!-- ![screenshot](docs/screenshot.png) -->
 
 <br>This project was made to practice webpack and babel assets pipeline.<br>
 
@@ -21,16 +21,13 @@ You can access a deployed version of this app:<br>
 https://raw.githack.com/SevlaMare/LeHouse/feature-app/dist/index.html
 
 ## Requirements
-- [x] Store data from form to an array
-- [x] Display the books
-- [x] Button to 'New Book'
-- [x] Button to 'Remove Book'
-- [x] Button to change status of 'Read'
+- [x] Move between pages using JS only
 
 ## Built With
 
-- Javascript ES6<br>
+- Javascript<br>
 - HTML/CSS <br>
+- Webpack (Assets pipeline) <br>
 - ESlint and Stylint (Linters) <br>
 - GitHub Actions (CI Tool) <br>
 - Git, Github and VScode <br>
@@ -43,7 +40,7 @@ To use this program, you will need only a web browser like google crome.
 #### Get a local copy
 Now you need a copy of this application, if you are using Git:
 ```js
-git clone git@github.com:SevlaMare/libray.git
+git clone git@github.com:SevlaMare/LeHouse.git
 ```
 Otherwise just hit (Download Zip) on green button (Clone or Download) at top of this page.
 
@@ -61,11 +58,6 @@ You can do it on [issues page](issues/).
 A special thanks for the code reviewers.
 
 ## Author
-👤 **Oscar Elizarrarás**
-
-- Github: [@Oscar](https://github.com/AlfredoElizarraras)
-- Twitter: [#Oscar](https://twitter.com/OscarAlfredoGm4)
-- Linkedin: [Oscar](https://mx.linkedin.com/in/oscar-alfredo-gomez-elizarraras)
 
 👤 **Thiago Miranda**
 
@@ -74,4 +66,4 @@ A special thanks for the code reviewers.
 - Linkedin: [SevlaMare](https://www.linkedin.com/in/sevla-mare)
 
 ### License
-<strong>Creative Commons • July 2020</strong>
+<strong>Creative Commons • Ago 2020</strong>
