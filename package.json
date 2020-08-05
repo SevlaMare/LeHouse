@@ -2,15 +2,16 @@
   "name": "lehouse",
   "version": "1.0.0",
   "description": "> A restaurant page.",
-  "main": "index.js",
+  "main": "main.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "webpack"
   },
   "author": "Thiago Miranda",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
