@@ -1,0 +1,15 @@
+ul {
+  list-style: none;
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-right: 15px;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+}

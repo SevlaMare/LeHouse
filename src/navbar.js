@@ -20,4 +20,4 @@ const renderNav = (() => {
   sel.append(nav)
 })();
 
-export {renderNav};
+export default renderNav;
