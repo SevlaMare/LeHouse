@@ -97,6 +97,26 @@
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var renderHome = function () {
+  var sel = document.querySelector('#content');
+  var title = document.createElement('h1');
+  title.innerHTML = 'Le House is the house!';
+  sel.append(title);
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (renderHome);
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -106,12 +126,46 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);
-// import renderNav from './navbar';
-// import renderHome from './home';
- // renderNav();
-// renderHome();
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ "./src/navbar.js");
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ "./src/home.js");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+Object(_navbar__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_home__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+/***/ }),
+
+/***/ "./src/navbar.js":
+/*!***********************!*\
+  !*** ./src/navbar.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var renderNav = function () {
+  var sel = document.querySelector("#content");
+  var nav = document.createElement('nav');
+  var list = document.createElement('ul');
+  var listItem1 = document.createElement('li');
+  var listItem2 = document.createElement('li');
+  var listItem3 = document.createElement('li');
+  listItem1.innerHTML = 'Menu';
+  listItem2.innerHTML = 'Home';
+  listItem3.innerHTML = 'Contact';
+  list.setAttribute('class', 'flex');
+  list.append(listItem1);
+  list.append(listItem2);
+  list.append(listItem3);
+  nav.append(list);
+  sel.append(nav);
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (renderNav);
 
 /***/ })
 
