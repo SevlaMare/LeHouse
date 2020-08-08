@@ -1,0 +1,33 @@
+{
+  "name": "lehouse",
+  "version": "1.0.0",
+  "description": "> A restaurant page.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "build:watch": "webpack -w --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SevlaMare/LeHouse.git"
+  },
+  "author": "Thiago Miranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SevlaMare/LeHouse/issues"
+  },
+  "homepage": "https://github.com/SevlaMare/LeHouse#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
