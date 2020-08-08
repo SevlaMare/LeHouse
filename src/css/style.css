@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex { display: flex; }
+.space-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+.wrap { flex-wrap: wrap; }
+.float-left { float: left; }
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/cover.jpg");
+}
+
+h1 {
+  width: fit-content;
+  margin: 200px auto;
+  padding: 20px 15px;
+  font-size: 3.6rem;
+  color: #fff;
+  text-shadow: 0 0 8px #c5a05c;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul {
+  list-style: none;
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-right: 15px;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+}
