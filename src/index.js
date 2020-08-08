@@ -1,6 +1,6 @@
-import renderNav from './navbar';
-import renderHome from './home';
-import css from './css/style.css';
+// import renderNav from './navbar';
+// import renderHome from './home';
+import './css/style.css';
 
-renderNav();
-renderHome();
+// renderNav();
+// renderHome();

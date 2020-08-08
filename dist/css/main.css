@@ -13,7 +13,7 @@ body {
 #content {
   width: 100%;
   min-height: 100vh;
-  background-image: url(assets/cover.jpg);
+  background-image: url(img/cover.jpg);
 }
 
 h1 {
