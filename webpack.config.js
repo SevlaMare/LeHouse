@@ -23,7 +23,7 @@ module.exports = {
         ]
       },
 
-      // FILE LOADER
+      // FILE LOADER for images
       {
         test: /\.(png|jpg)$/,
         use: {
@@ -45,9 +45,12 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "My app",
+      template: 'src/index.html',
+      // filename: 'index.html',
+      // title: "My app",
       // favicon: "images/idk.svg",
-      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
+      // filename: 'index.html,
+      // meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
     }),
 
     new MiniCssExtractPlugin({

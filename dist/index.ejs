@@ -1,0 +1,9 @@
+<html lang="en" dir="ltr">
+  <head>
+    <title><%=foo%></title>
+  </head>
+  <body>
+    <% var template = require("html-loader!./file.html"); %>
+    <%= template.replace('${foo}',foo) %>
+  </body>
+</html>
