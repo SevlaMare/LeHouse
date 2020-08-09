@@ -16,6 +16,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-image: url("../img/cover.jpg");
+  background-repeat: no-repeat;
 }
 
 h1 {
