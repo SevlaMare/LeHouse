@@ -1,5 +1,5 @@
 const renderNav = (() => {
-  const sel = document.querySelector("#content");
+  const sel = document.querySelector('#content');
   const nav = document.createElement('nav');
   const list = document.createElement('ul');
   const listItem1 = document.createElement('li');
