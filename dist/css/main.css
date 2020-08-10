@@ -19,14 +19,24 @@ body {
   background-repeat: no-repeat;
 }
 
-h1 {
+.t-box {
   width: fit-content;
   margin: 200px auto;
   padding: 20px 15px;
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pointer { cursor: pointer; }
+li:hover {
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
   font-size: 3.6rem;
   color: #fff;
   text-shadow: 0 0 8px #c5a05c;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 ul {
@@ -45,3 +55,8 @@ li {
   color: #fff;
 }
 
+/* home */
+.description {
+  font-size: 1.2rem;
+  color: #fff;
+}

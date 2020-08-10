@@ -109,8 +109,12 @@ __webpack_require__.r(__webpack_exports__);
 var renderHome = function () {
   var sel = document.querySelector('#content');
   var title = document.createElement('h1');
-  title.innerHTML = 'Le House is the house!';
-  sel.append(title);
+  title.innerHTML = 'Enjoy a taste meal in a cozy place!';
+  title.setAttribute('class', 't-box');
+  var description = document.createElement('p');
+  description.innerHTML = "\"Very tasty food, with friendly staff in a cozy atmosphere.\"";
+  description.setAttribute('class', 'description t-box');
+  sel.append(title, description);
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (renderHome);
@@ -148,7 +152,7 @@ Object(_home__WEBPACK_IMPORTED_MODULE_1__["default"])();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var renderNav = function () {
-  var sel = document.querySelector("#content");
+  var sel = document.querySelector('#content');
   var nav = document.createElement('nav');
   var list = document.createElement('ul');
   var listItem1 = document.createElement('li');
@@ -157,10 +161,11 @@ var renderNav = function () {
   listItem1.innerHTML = 'Menu';
   listItem2.innerHTML = 'Home';
   listItem3.innerHTML = 'Contact';
+  listItem1.setAttribute('class', 'pointer');
+  listItem2.setAttribute('class', 'pointer');
+  listItem3.setAttribute('class', 'pointer');
   list.setAttribute('class', 'flex');
-  list.append(listItem1);
-  list.append(listItem2);
-  list.append(listItem3);
+  list.append(listItem1, listItem2, listItem3);
   nav.append(list);
   sel.append(nav);
 }();
