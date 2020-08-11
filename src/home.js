@@ -3,7 +3,7 @@ const renderHome = (() => {
 
   const title = document.createElement('h1');
   title.innerHTML = 'Enjoy a taste meal in a cozy place!';
-  title.setAttribute('class', 't-box');
+  title.setAttribute('class', 't-box slogan');
 
   const description = document.createElement('p')
   description.innerHTML = `"Very tasty food, with friendly staff in a cozy atmosphere."`

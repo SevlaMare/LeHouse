@@ -28,16 +28,14 @@ body {
 }
 
 .pointer { cursor: pointer; }
-li:hover {
-  background: #333;
-  background-color: rgba(0, 0, 0, 0.7);
-}
 
-h1 {
+.slogan {
   font-size: 3.6rem;
   color: #fff;
   text-shadow: 0 0 8px #c5a05c;
 }
+
+hr { margin-bottom: 10px; }
 
 ul {
   list-style: none;
@@ -55,8 +53,30 @@ li {
   color: #fff;
 }
 
+li:hover {
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 /* home */
 .description {
   font-size: 1.2rem;
+  color: #fff;
+}
+
+/* menu */
+#menu {
+  min-width: 600px;
+}
+
+#menu h1 {
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+#menu p {
+  font-size: 1.2rem;
+  letter-spacing: 0;
   color: #fff;
 }

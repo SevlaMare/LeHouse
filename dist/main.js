@@ -97,6 +97,35 @@
 
 /***/ }),
 
+/***/ "./src/helpers.js":
+/*!************************!*\
+  !*** ./src/helpers.js ***!
+  \************************/
+/*! exports provided: createContent, createContainer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createContent", function() { return createContent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createContainer", function() { return createContainer; });
+var createContent = function createContent(tag, className, text) {
+  var element = document.createElement(tag);
+  text ? element.innerHTML = text : null;
+  className ? element.className = className : null;
+  return element;
+};
+
+var createContainer = function createContainer(tag, className, idName) {
+  var element = document.createElement(tag);
+  className ? element.className = className : null;
+  idName ? element.id = idName : null;
+  return element;
+};
+
+
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -110,7 +139,7 @@ var renderHome = function () {
   var sel = document.querySelector('#content');
   var title = document.createElement('h1');
   title.innerHTML = 'Enjoy a taste meal in a cozy place!';
-  title.setAttribute('class', 't-box');
+  title.setAttribute('class', 't-box slogan');
   var description = document.createElement('p');
   description.innerHTML = "\"Very tasty food, with friendly staff in a cozy atmosphere.\"";
   description.setAttribute('class', 'description t-box');
@@ -132,13 +161,42 @@ var renderHome = function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ "./src/navbar.js");
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ "./src/home.js");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 Object(_navbar__WEBPACK_IMPORTED_MODULE_0__["default"])();
 Object(_home__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_menu__WEBPACK_IMPORTED_MODULE_2__["default"])();
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
+
+
+var rendeMenu = function () {
+  var sel = document.querySelector('#content'); // menu container
+
+  sel.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('div', 't-box', 'menu')); // menu items
+
+  menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', null, 'MACARRONE'));
+  menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('hr', null, null));
+  menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', null, 'Pasta that melts in your mouth'));
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (renderMenu);
 
 /***/ }),
 
@@ -165,6 +223,7 @@ var renderNav = function () {
   listItem2.setAttribute('class', 'pointer');
   listItem3.setAttribute('class', 'pointer');
   list.setAttribute('class', 'flex');
+  list.setAttribute('id', 'nav-list');
   list.append(listItem1, listItem2, listItem3);
   nav.append(list);
   sel.append(nav);

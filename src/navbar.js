@@ -10,10 +10,13 @@ const renderNav = (() => {
   listItem1.innerHTML = 'Menu';
   listItem2.innerHTML = 'Home';
   listItem3.innerHTML = 'Contact';
+
   listItem1.setAttribute('class', 'pointer');
   listItem2.setAttribute('class', 'pointer');
   listItem3.setAttribute('class', 'pointer');
+
   list.setAttribute('class', 'flex');
+  list.setAttribute('id', 'nav-list');
 
   list.append(listItem1, listItem2, listItem3);
   nav.append(list);
