@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 var renderHome = function () {
   var sel = document.querySelector('#content');
   var title = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', 't-box slogan bg-dark-60', 'Enjoy a taste meal in a cozy place!');
-  var description = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', 'description t-box bg-dark-60', "\"Very tasty food, with friendly staff in a cozy atmosphere.\"");
+  var description = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', 'description t-box bg-dark-60', '"Very tasty food, with friendly staff in a cozy atmosphere."');
   sel.append(title, description);
 }();
 
@@ -185,14 +185,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
 
 
-var rendeMenu = function () {
+var renderMenu = function () {
   var sel = document.querySelector('#content'); // menu container
 
-  sel.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('div', 't-box bg-dark-90', 'menu')); // menu items
+  var menu = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('div', 't-box bg-dark-90', 'menu'); // menu items
 
-  menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', null, 'MACARRONE'));
-  menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('hr', null, null));
-  menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', null, 'Pasta that melts in your mouth'));
+  var item1 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', null, 'MACARRONE');
+  var item2 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('hr', null, null);
+  var item3 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', null, 'Pasta that melts in your mouth');
+  sel.append(menu);
+  menu.append(item1, item2, item3);
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (renderMenu);
@@ -208,21 +210,16 @@ var rendeMenu = function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
+
+
 var renderNav = function () {
   var sel = document.querySelector('#content');
-  var nav = document.createElement('nav');
-  var list = document.createElement('ul');
-  var listItem1 = document.createElement('li');
-  var listItem2 = document.createElement('li');
-  var listItem3 = document.createElement('li');
-  listItem1.innerHTML = 'Menu';
-  listItem2.innerHTML = 'Home';
-  listItem3.innerHTML = 'Contact';
-  listItem1.setAttribute('class', 'pointer');
-  listItem2.setAttribute('class', 'pointer');
-  listItem3.setAttribute('class', 'pointer');
-  list.setAttribute('class', 'flex');
-  list.setAttribute('id', 'nav-list');
+  var nav = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('nav');
+  var list = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('ul', 'flex', 'nav-list');
+  var listItem1 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('li', 'pointer', 'Menu');
+  var listItem2 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('li', 'pointer', 'Home');
+  var listItem3 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('li', 'pointer', 'Contact');
   list.append(listItem1, listItem2, listItem3);
   nav.append(list);
   sel.append(nav);
