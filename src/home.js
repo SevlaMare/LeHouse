@@ -1,14 +1,13 @@
+import { createContent, createContainer } from './helpers';
+
 const renderHome = (() => {
   const sel = document.querySelector('#content');
 
-  const title = document.createElement('h1');
-  title.innerHTML = 'Enjoy a taste meal in a cozy place!';
-  title.setAttribute('class', 't-box slogan');
+  const title = createContent('h1', 't-box slogan bg-dark-60',
+    'Enjoy a taste meal in a cozy place!')
+  const description = createContent('p', 'description t-box bg-dark-60',
+    `"Very tasty food, with friendly staff in a cozy atmosphere."`)
 
-  const description = document.createElement('p')
-  description.innerHTML = `"Very tasty food, with friendly staff in a cozy atmosphere."`
-  description.setAttribute('class', 'description t-box');
-  
   sel.append(title, description);
 })();
 

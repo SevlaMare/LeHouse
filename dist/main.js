@@ -135,14 +135,13 @@ var createContainer = function createContainer(tag, className, idName) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
+
+
 var renderHome = function () {
   var sel = document.querySelector('#content');
-  var title = document.createElement('h1');
-  title.innerHTML = 'Enjoy a taste meal in a cozy place!';
-  title.setAttribute('class', 't-box slogan');
-  var description = document.createElement('p');
-  description.innerHTML = "\"Very tasty food, with friendly staff in a cozy atmosphere.\"";
-  description.setAttribute('class', 'description t-box');
+  var title = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', 't-box slogan bg-dark-60', 'Enjoy a taste meal in a cozy place!');
+  var description = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', 'description t-box bg-dark-60', "\"Very tasty food, with friendly staff in a cozy atmosphere.\"");
   sel.append(title, description);
 }();
 
@@ -189,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 var rendeMenu = function () {
   var sel = document.querySelector('#content'); // menu container
 
-  sel.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('div', 't-box', 'menu')); // menu items
+  sel.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('div', 't-box bg-dark-90', 'menu')); // menu items
 
   menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', null, 'MACARRONE'));
   menu.append(Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('hr', null, null));

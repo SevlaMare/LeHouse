@@ -4,7 +4,7 @@ const rendeMenu = (() => {
   const sel = document.querySelector('#content');
 
   // menu container
-  sel.append(createContainer('div', 't-box', 'menu'))
+  sel.append(createContainer('div', 't-box bg-dark-90', 'menu'))
 
   // menu items
   menu.append(createContent('h1', null, 'MACARRONE'))

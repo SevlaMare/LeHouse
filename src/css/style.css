@@ -23,8 +23,16 @@ body {
   width: fit-content;
   margin: 200px auto;
   padding: 20px 15px;
+}
+
+.bg-dark-60 {
   background: #333;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-dark-90 {
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .pointer { cursor: pointer; }
