@@ -1,15 +1,18 @@
 import { createContent, createContainer } from './helpers';
 
-const rendeMenu = (() => {
+const renderMenu = (() => {
   const sel = document.querySelector('#content');
 
   // menu container
-  sel.append(createContainer('div', 't-box bg-dark-90', 'menu'))
+  const menu = createContainer('div', 't-box bg-dark-90', 'menu')
 
   // menu items
-  menu.append(createContent('h1', null, 'MACARRONE'))
-  menu.append(createContent('hr', null, null))
-  menu.append(createContent('p', null, 'Pasta that melts in your mouth')) 
+  const item1 = createContent('h1', null, 'MACARRONE')
+  const item2 = createContent('hr', null, null)
+  const item3 = createContent('p', null, 'Pasta that melts in your mouth')
+
+  sel.append(menu);
+  menu.append(item1, item2, item3);
 })();
 
 export default renderMenu;
