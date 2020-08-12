@@ -111,7 +111,8 @@ __webpack_require__.r(__webpack_exports__);
 var createContent = function createContent(tag, className, text) {
   var element = document.createElement(tag);
   text ? element.innerHTML = text : null;
-  className ? element.className = className : null;
+  className ? element.className = className : null; // element.className = className || -1;
+
   return element;
 };
 
@@ -138,12 +139,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
 
 
-var renderHome = function () {
+var renderHome = function renderHome() {
   var sel = document.querySelector('#content');
   var title = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('h1', 't-box slogan bg-dark-60', 'Enjoy a taste meal in a cozy place!');
   var description = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', 'description t-box bg-dark-60', '"Very tasty food, with friendly staff in a cozy atmosphere."');
   sel.append(title, description);
-}();
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (renderHome);
 
@@ -185,7 +186,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
 
 
-var renderMenu = function () {
+var renderMenu = function renderMenu() {
   var sel = document.querySelector('#content'); // menu container
 
   var menu = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('div', 't-box bg-dark-90', 'menu'); // menu items
@@ -195,7 +196,7 @@ var renderMenu = function () {
   var item3 = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContent"])('p', null, 'Pasta that melts in your mouth');
   sel.append(menu);
   menu.append(item1, item2, item3);
-}();
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (renderMenu);
 
@@ -213,7 +214,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./src/helpers.js");
 
 
-var renderNav = function () {
+var renderNav = function renderNav() {
   var sel = document.querySelector('#content');
   var nav = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('nav');
   var list = Object(_helpers__WEBPACK_IMPORTED_MODULE_0__["createContainer"])('ul', 'flex', 'nav-list');
@@ -223,7 +224,7 @@ var renderNav = function () {
   list.append(listItem1, listItem2, listItem3);
   nav.append(list);
   sel.append(nav);
-}();
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (renderNav);
 

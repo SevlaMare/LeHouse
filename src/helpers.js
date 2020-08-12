@@ -1,14 +1,17 @@
 const createContent = (tag, className, text) => {
   const element = document.createElement(tag);
-  text ? element.innerHTML = text : null;
-  className ? element.className = className : null;
+
+  if (text) { element.innerHTML = text; }
+  if (className) { element.className = className; }
   return element;
 };
 
 const createContainer = (tag, className, idName) => {
   const element = document.createElement(tag);
-  className ? element.className = className : null;
-  idName ? element.id = idName : null;
+
+  if (className) { element.className = className; }
+  if (idName) { element.id = idName; }
+
   return element;
 };
 

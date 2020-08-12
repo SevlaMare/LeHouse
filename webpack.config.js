@@ -52,6 +52,7 @@ module.exports = {
       // favicon: "images/idk.svg",
       // filename: 'index.html,
       // meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
+      // TODO: insert div inside body with class
     }),
 
     new MiniCssExtractPlugin({

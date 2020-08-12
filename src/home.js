@@ -1,6 +1,6 @@
 import { createContent } from './helpers';
 
-const renderHome = (() => {
+const renderHome = () => {
   const sel = document.querySelector('#content');
 
   const title = createContent('h1', 't-box slogan bg-dark-60',
@@ -9,6 +9,6 @@ const renderHome = (() => {
     '"Very tasty food, with friendly staff in a cozy atmosphere."');
 
   sel.append(title, description);
-})();
+};
 
 export default renderHome;
