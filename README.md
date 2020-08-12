@@ -3,7 +3,7 @@
 
 <!-- ![screenshot](docs/screenshot.png) -->
 
-<br>This project was made to practice webpack and babel assets pipeline.<br>
+<br>This is a desktop webpage, build mainly to practice the webpack workflow and DOM manipulation.<br>
 
 ## Content
 
@@ -21,17 +21,26 @@ You can access a deployed version of this app:<br>
 https://raw.githack.com/SevlaMare/LeHouse/feature-app/dist/index.html
 
 ## Requirements
-- [x] Move between pages using JS only
+- [x] Setup webpack to build all from source(src) to distribuition(dist) folder
+- [x] Setup npm/yarn scripts to linters, server and webpack build
+- [x] Implement tabs, move between them using HTML, CSS and JS only
 
 ## Built With
 
 - Javascript<br>
 - HTML/CSS <br>
-- Webpack (Assets pipeline) <br>
+- Webpack <br>
 - ESlint and Stylint (Linters) <br>
 - GitHub Actions (CI Tool) <br>
 - Git, Github and VScode <br>
 
+## Possible features
+
+- Make responsive
+- Refine CSS adding more modern effects
+- Render the menu items from a database
+- Optimize the code removing the redundances
+- Use handlebars for HTML template
 
 ## Getting Start
 
