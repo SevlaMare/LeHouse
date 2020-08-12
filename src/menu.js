@@ -18,9 +18,9 @@ const renderMenu = () => {
   const item5 = createContent('hr', null, null);
   const item6 = createContent('p', null, 'The original lasagna recipe from Tibet monks (Very Awesome)');
 
-  const item7 = createContent('h1', null, 'PIZZA');
+  const item7 = createContent('h1', null, 'PANIGALE');
   const item8 = createContent('hr', null, null);
-  const item9 = createContent('p', null, 'Just a regular pizza');
+  const item9 = createContent('p', null, 'Just a regular panigale');
 
   // annex
   sel.append(menu);

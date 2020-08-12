@@ -6,6 +6,7 @@ body {
 }
 
 .flex { display: flex; }
+.items-flex-end { align-items: flex-end; }
 .space-between { justify-content: space-between; }
 .justify-center { justify-content: center; }
 .align-center { align-items: center; }
@@ -95,4 +96,22 @@ li:hover {
 
 .menu-item {
   margin-bottom: 25px;
+}
+
+#contact {
+  color: #fff;
+  padding: 60px;
+  border-radius: 7px;
+}
+
+.info:first-child {
+  margin-right: 45px;
+}
+
+#contact h1 {
+  margin-bottom: 30px;
+}
+
+#contact p {
+  font-size: 1.4rem;
 }
