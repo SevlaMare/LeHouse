@@ -5,9 +5,9 @@ const renderMenu = () => {
 
   // menu container
   const menu = createContainer('div', 't-box bg-dark-90', 'menu');
-  const menuItem1 = createContainer('div', 'menu-item')
-  const menuItem2 = createContainer('div', 'menu-item')
-  const menuItem3 = createContainer('div', 'menu-item')
+  const menuItem1 = createContainer('div', 'menu-item');
+  const menuItem2 = createContainer('div', 'menu-item');
+  const menuItem3 = createContainer('div', 'menu-item');
 
   // menu items
   const item1 = createContent('h1', null, 'PAST');
@@ -27,7 +27,7 @@ const renderMenu = () => {
   menuItem1.append(item1, item2, item3);
   menuItem2.append(item4, item5, item6);
   menuItem3.append(item7, item8, item9);
-  menu.append(menuItem1, menuItem2, menuItem3)
+  menu.append(menuItem1, menuItem2, menuItem3);
 };
 
 export default renderMenu;
