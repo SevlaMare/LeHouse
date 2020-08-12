@@ -46,17 +46,15 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'LeHouse',
       template: 'src/index.html',
       // filename: 'index.html',
-      // title: "My app",
       // favicon: "images/idk.svg",
-      // filename: 'index.html,
       // meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
-      // TODO: insert div inside body with class
     }),
 
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css', // css output
+      filename: 'css/[name].css', // css output path
     })
   ]
 }

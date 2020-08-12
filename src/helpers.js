@@ -3,6 +3,7 @@ const createContent = (tag, className, text) => {
 
   if (text) { element.innerHTML = text; }
   if (className) { element.className = className; }
+
   return element;
 };
 

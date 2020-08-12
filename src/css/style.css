@@ -40,6 +40,7 @@ body {
 .slogan {
   font-size: 3.6rem;
   color: #fff;
+  border-radius: 7px;
   text-shadow: 0 0 8px #c5a05c;
 }
 
@@ -75,6 +76,9 @@ li:hover {
 /* menu */
 #menu {
   min-width: 600px;
+  padding: 50px;
+  border-radius: 7px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #menu h1 {
@@ -87,4 +91,8 @@ li:hover {
   font-size: 1.2rem;
   letter-spacing: 0;
   color: #fff;
+}
+
+.menu-item {
+  margin-bottom: 25px;
 }
