@@ -9,6 +9,10 @@ const renderNav = () => {
   const listItem2 = createContent('li', 'pointer', 'Home');
   const listItem3 = createContent('li', 'pointer', 'Contact');
 
+  listItem1.id = 'nav-menu';
+  listItem2.id = 'nav-home';
+  listItem3.id = 'nav-contact';
+
   list.append(listItem1, listItem2, listItem3);
   nav.append(list);
   sel.append(nav);
