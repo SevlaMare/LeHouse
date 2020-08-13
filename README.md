@@ -1,7 +1,7 @@
 # Le House
 > A restaurant page.
 
-<!-- ![screenshot](docs/screenshot.png) -->
+![screenshot](doc/screenshot.png)
 
 <br>This is a desktop webpage, build mainly to practice the webpack workflow and DOM manipulation.<br>
 
@@ -18,12 +18,38 @@
 
 ## Live Demo
 You can access a deployed version of this app:<br>
-https://raw.githack.com/SevlaMare/LeHouse/feature-app/dist/index.html
+https://raw.githack.com/SevlaMare/LeHouse/feature-implementation/dist/index.html
 
 ## Requirements
 - [x] Setup webpack to build all from source(src) to distribuition(dist) folder
 - [x] Setup npm/yarn scripts to linters, server and webpack build
 - [x] Implement tabs, move between them using HTML, CSS and JS only
+
+
+## Pre-requisites
+<ul>
+	<li>Node</li>
+	<li>Npm</li>
+	<li>Yarn</li>
+	<li>Web browser</li>
+</ul>
+
+## Setup
+
+Download all dependencies with
+```js
+npm install
+```
+
+Start the server with
+```js
+yarn go
+```
+
+Visit the app running on
+```js
+localhost:7000
+```
 
 ## Built With
 
