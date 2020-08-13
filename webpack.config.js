@@ -5,6 +5,13 @@ const path = require('path');
 
 module.exports = {
   devtool: "none",
+
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+
   module: {
     rules: [
       // BABEL
@@ -28,13 +35,12 @@ module.exports = {
       // FILE LOADER for images
       {
         test: /\.(png|jpg)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: '../img/'
-          }
-        }
+        loader: 'file-loader',
+        options: {
+          name: 'img/[name].[ext]',
+          output: 'img/',
+          publicPath: '../' // url path
+        },
       },
 
       // CSS LOADER + split plug
