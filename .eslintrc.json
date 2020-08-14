@@ -15,5 +15,8 @@
     "eol-last": "off",
     "arrow-parens": "off"
   },
-  "ignorePatterns": ["dist/", "build/", "webpack.config.js"]
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
 }
