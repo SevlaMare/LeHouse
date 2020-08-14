@@ -1,10 +1,10 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  devtool: "none",
+  devtool: 'none',
 
   entry: './src/index.js',
   output: {
@@ -15,21 +15,21 @@ module.exports = {
   module: {
     rules: [
       // BABEL
-      {  
-        test: /\.js$/,  
-        exclude: /node_modules/,  
-        use: {  
-          loader: 'babel-loader',  
-          options: { cacheDirectory: true }  
-        }
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: { cacheDirectory: true },
+        },
       },
 
       // HTML LOADER + plug
       {
         test: /\.html$/,
         use: [
-          { loader: "html-loader" }
-        ]
+          { loader: 'html-loader' },
+        ],
       },
 
       // FILE LOADER for images
@@ -40,16 +40,16 @@ module.exports = {
           name: 'img/[name].[ext]',
           output: 'img/',
           // css url path on output
-          publicPath: '../'
+          publicPath: '../',
         },
       },
 
       // CSS LOADER + split plug
       {
         test: /\.css$/,
-        use:  [ MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
-    ]
+    ],
   },
 
   plugins: [
@@ -63,6 +63,6 @@ module.exports = {
       filename: 'css/[name].css',
     }),
 
-    new CssMinimizerPlugin()
-  ]
-}
+    new CssMinimizerPlugin(),
+  ],
+};
